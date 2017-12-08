@@ -44,7 +44,7 @@
             // 
             // btSaludo
             // 
-            this.btSaludo.Location = new System.Drawing.Point(123, 138);
+            this.btSaludo.Location = new System.Drawing.Point(120, 136);
             this.btSaludo.Name = "btSaludo";
             this.btSaludo.Size = new System.Drawing.Size(95, 23);
             this.btSaludo.TabIndex = 1;
