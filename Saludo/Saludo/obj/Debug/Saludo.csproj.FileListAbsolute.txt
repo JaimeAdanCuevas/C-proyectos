@@ -1,0 +1,10 @@
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\bin\Debug\Saludo.exe.config
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\bin\Debug\Saludo.exe
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\bin\Debug\Saludo.pdb
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\obj\Debug\Saludo.csprojResolveAssemblyReference.cache
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\obj\Debug\Saludo.Form1.resources
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\obj\Debug\Saludo.Properties.Resources.resources
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\obj\Debug\Saludo.csproj.GenerateResource.Cache
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\obj\Debug\Saludo.csproj.CoreCompileInputs.cache
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\obj\Debug\Saludo.exe
+C:\Users\JaimeAdan\source\repos\Saludo\Saludo\obj\Debug\Saludo.pdb
