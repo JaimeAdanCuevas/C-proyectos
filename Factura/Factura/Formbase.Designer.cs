@@ -34,6 +34,7 @@
             // 
             // btnSalir
             // 
+            this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.btnSalir.Location = new System.Drawing.Point(192, 216);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
@@ -57,6 +58,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.CancelButton = this.btnSalir;
             this.ClientSize = new System.Drawing.Size(337, 319);
             this.Controls.Add(this.btnCerrar_sesion);
             this.Controls.Add(this.btnSalir);

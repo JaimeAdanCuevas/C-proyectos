@@ -17,8 +17,6 @@ namespace Factura
             InitializeComponent();
         }
 
-        Login login = new Login();
-
         private void btnSalir_Click(object sender, EventArgs e)
         {
             if(MessageBox.Show("Desea salir? " , "Aviso", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
@@ -29,6 +27,8 @@ namespace Factura
 
         private void btnCerrar_sesion_Click(object sender, EventArgs e)
         {
+            Login login = new Login();
+
             this.Hide();
             login.Show();
         }
