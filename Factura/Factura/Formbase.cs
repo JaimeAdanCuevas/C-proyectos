@@ -32,5 +32,38 @@ namespace Factura
             this.Hide();
             login.Show();
         }
+
+        public virtual void cerrarSe()
+        {
+            ContenedorPrincipal contenedorPrincipal = new ContenedorPrincipal();
+            contenedorPrincipal.Hide();
+        }
+
+        public virtual void Eliminar()
+        {
+
+        } 
+
+        public virtual void Nuevo()
+        {
+
+        }
+
+        public virtual void Consultar()
+        {
+
+        }
+
+        public virtual Boolean Guardar()
+        {
+            return false;
+        }
+
+        private void btnContenedor_pri_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ContenedorPrincipal c = new ContenedorPrincipal();
+            c.Show();
+        }
     }
 }

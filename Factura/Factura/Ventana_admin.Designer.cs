@@ -34,7 +34,6 @@
             this.lblUsAdmin = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCodAdmin = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -50,6 +49,11 @@
             // 
             this.btnCerrar_sesion.Location = new System.Drawing.Point(336, 168);
             this.btnCerrar_sesion.Size = new System.Drawing.Size(136, 31);
+            // 
+            // btnContenedor_pri
+            // 
+            this.btnContenedor_pri.Location = new System.Drawing.Point(336, 48);
+            this.btnContenedor_pri.Size = new System.Drawing.Size(136, 31);
             // 
             // label1
             // 
@@ -105,15 +109,6 @@
             this.lblCodAdmin.TabIndex = 5;
             this.lblCodAdmin.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(336, 48);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 32);
-            this.button1.TabIndex = 6;
-            this.button1.Text = "Contendor Principal";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(336, 88);
@@ -149,7 +144,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCodAdmin);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblUsAdmin);
@@ -161,6 +155,7 @@
             this.Text = "Ventana_admin";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ventana_admin_FormClosed);
             this.Load += new System.EventHandler(this.Ventana_admin_Load);
+            this.Controls.SetChildIndex(this.btnContenedor_pri, 0);
             this.Controls.SetChildIndex(this.btnCerrar_sesion, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.lblAdmin, 0);
@@ -168,7 +163,6 @@
             this.Controls.SetChildIndex(this.lblUsAdmin, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.lblCodAdmin, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.button2, 0);
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
@@ -187,7 +181,6 @@
         private System.Windows.Forms.Label lblUsAdmin;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblCodAdmin;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.PictureBox pictureBox1;

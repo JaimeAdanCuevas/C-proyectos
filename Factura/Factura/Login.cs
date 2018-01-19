@@ -61,11 +61,6 @@ namespace Factura
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void Form1_Activated(object sender, EventArgs e)
         {
             txtCuenta.Focus();

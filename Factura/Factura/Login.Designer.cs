@@ -51,6 +51,11 @@
             this.btnCerrar_sesion.Location = new System.Drawing.Point(8, 312);
             this.btnCerrar_sesion.Visible = false;
             // 
+            // btnContenedor_pri
+            // 
+            this.btnContenedor_pri.Location = new System.Drawing.Point(8, 288);
+            this.btnContenedor_pri.Visible = false;
+            // 
             // btnInici
             // 
             this.btnInici.BackColor = System.Drawing.SystemColors.InactiveCaption;
@@ -127,6 +132,7 @@
             this.Text = "Form1";
             this.Activated += new System.EventHandler(this.Form1_Activated);
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Login_FormClosed);
+            this.Controls.SetChildIndex(this.btnContenedor_pri, 0);
             this.Controls.SetChildIndex(this.btnCerrar_sesion, 0);
             this.Controls.SetChildIndex(this.btnInici, 0);
             this.Controls.SetChildIndex(this.label1, 0);

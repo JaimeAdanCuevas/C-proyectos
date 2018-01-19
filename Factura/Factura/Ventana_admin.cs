@@ -20,16 +20,6 @@ namespace Factura
 
         private Login login = new Login();
 
-        private void Ventana_admin_FormClosed(object sender, FormClosedEventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void Ventana_admin_Load(object sender, EventArgs e)
         {
 
@@ -51,14 +41,13 @@ namespace Factura
             {
 
                 MessageBox.Show("error : " + error.Message);
-            }    
+            }
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void Ventana_admin_FormClosed(object sender, FormClosedEventArgs e)
         {
-            this.Hide();
-            login.Show();
+            Application.Exit();
         }
     }
 }

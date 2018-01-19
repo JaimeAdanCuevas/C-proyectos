@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.button3 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblCodUs = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.lblUs = new System.Windows.Forms.Label();
@@ -50,6 +49,11 @@
             this.btnCerrar_sesion.Location = new System.Drawing.Point(312, 160);
             this.btnCerrar_sesion.Size = new System.Drawing.Size(136, 32);
             // 
+            // btnContenedor_pri
+            // 
+            this.btnContenedor_pri.Location = new System.Drawing.Point(312, 80);
+            this.btnContenedor_pri.Size = new System.Drawing.Size(136, 31);
+            // 
             // button3
             // 
             this.button3.Location = new System.Drawing.Point(312, 119);
@@ -58,15 +62,6 @@
             this.button3.TabIndex = 20;
             this.button3.Text = "Cambiar Contrasena";
             this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(312, 80);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(136, 32);
-            this.button1.TabIndex = 18;
-            this.button1.Text = "Contendor Principal";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // lblCodUs
             // 
@@ -138,7 +133,6 @@
             this.ClientSize = new System.Drawing.Size(473, 375);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.lblCodUs);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblUs);
@@ -150,6 +144,7 @@
             this.Text = "Ventana_User";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Ventana_User_FormClosed);
             this.Load += new System.EventHandler(this.Ventana_User_Load);
+            this.Controls.SetChildIndex(this.btnContenedor_pri, 0);
             this.Controls.SetChildIndex(this.btnCerrar_sesion, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.lblNomUs, 0);
@@ -157,7 +152,6 @@
             this.Controls.SetChildIndex(this.lblUs, 0);
             this.Controls.SetChildIndex(this.label5, 0);
             this.Controls.SetChildIndex(this.lblCodUs, 0);
-            this.Controls.SetChildIndex(this.button1, 0);
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.pictureBox1, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
@@ -171,7 +165,6 @@
 
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label lblCodUs;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblUs;
