@@ -27,16 +27,13 @@ namespace Factura
 
         private void btnCerrar_sesion_Click(object sender, EventArgs e)
         {
-            Login login = new Login();
+            if(MessageBox.Show("Desea cerrar sesion?", "cerrar sesion", MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            {
+                Login login = new Login();
 
-            this.Hide();
-            login.Show();
-        }
-
-        public virtual void cerrarSe()
-        {
-            ContenedorPrincipal contenedorPrincipal = new ContenedorPrincipal();
-            contenedorPrincipal.Hide();
+                this.Hide();
+                login.Show();
+            } 
         }
 
         public virtual void Eliminar()

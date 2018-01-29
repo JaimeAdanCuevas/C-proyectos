@@ -43,6 +43,7 @@
             // 
             this.btnSalir.Location = new System.Drawing.Point(312, 200);
             this.btnSalir.Size = new System.Drawing.Size(136, 32);
+            this.btnSalir.TabIndex = 1;
             // 
             // btnCerrar_sesion
             // 
@@ -53,6 +54,7 @@
             // 
             this.btnContenedor_pri.Location = new System.Drawing.Point(312, 80);
             this.btnContenedor_pri.Size = new System.Drawing.Size(136, 31);
+            this.btnContenedor_pri.TabIndex = 0;
             // 
             // button3
             // 

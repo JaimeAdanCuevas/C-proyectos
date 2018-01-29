@@ -14,9 +14,30 @@ namespace Factura
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            if (primeraInstancia)
+            {
+                Application.EnableVisualStyles();
+                Application.SetCompatibleTextRenderingDefault(false);
+                Application.Run(new Login());
+            }
+            else
+            {
+                MessageBox.Show("La aplicacion ya se esta ejecutando");
+                Application.Exit();
+            }
+        
+        }
+
+        private static bool primeraInstancia
+        {
+            get
+            {
+                System.Threading.Mutex emut;
+                string nombre_emut = "ApWinForms";
+                bool nueva;
+                emut = new System.Threading.Mutex(true, nombre_emut, out nueva);
+                return nueva;
+            }
         }
     }
 }

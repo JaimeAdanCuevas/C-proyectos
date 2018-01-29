@@ -35,6 +35,7 @@
             this.txtCuenta = new System.Windows.Forms.TextBox();
             this.txtContra = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -114,6 +115,17 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.button1.Location = new System.Drawing.Point(288, 280);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(88, 40);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Registrarse";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // Login
             // 
             this.AcceptButton = this.btnInici;
@@ -121,6 +133,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(708, 341);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.txtContra);
             this.Controls.Add(this.txtCuenta);
             this.Controls.Add(this.pictureBox1);
@@ -141,6 +154,7 @@
             this.Controls.SetChildIndex(this.txtCuenta, 0);
             this.Controls.SetChildIndex(this.txtContra, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
+            this.Controls.SetChildIndex(this.button1, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -155,6 +169,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.TextBox txtCuenta;
         private System.Windows.Forms.TextBox txtContra;
+        private System.Windows.Forms.Button button1;
     }
 }
 

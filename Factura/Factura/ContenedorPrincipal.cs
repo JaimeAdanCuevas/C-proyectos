@@ -106,26 +106,25 @@ namespace Factura
 
         private void clienteToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MantenimientoCliente mantenimientoCliente = new MantenimientoCliente();
-            mantenimientoCliente.MdiParent = this;
+            MantenimientoCliente mantenimientoCliente = new MantenimientoCliente
+            {
+                MdiParent = this
+            };
             mantenimientoCliente.Show();
         }
 
         private void productosToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            MantenimientoProducto mantenimientoProducto = new MantenimientoProducto();
-            mantenimientoProducto.MdiParent = this;
+            MantenimientoProducto mantenimientoProducto = new MantenimientoProducto
+            {
+                MdiParent = this
+            };
             mantenimientoProducto.Show();
         }
 
         private void ContenedorPrincipal_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
-        }
-
-        private void toolStripButton1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
@@ -136,6 +135,35 @@ namespace Factura
                 Login login = new Login();
                 login.Show();
             }
+        }
+
+        private void clienteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            consultarClientes conClientes = new consultarClientes
+            {
+                MdiParent = this
+            };
+            conClientes.Show();
+            
+        }
+
+        private void productoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            consultarProductos consPro = new consultarProductos
+            {
+                MdiParent = this
+            };
+            consPro.Show();
+        }
+
+        private void facturacionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Factura factura = new Factura
+            {
+                MdiParent = this
+            };
+
+            factura.Show();
         }
     }
 }

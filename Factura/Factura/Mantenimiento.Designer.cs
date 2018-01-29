@@ -28,11 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnAtras = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnSalir
@@ -44,13 +47,13 @@
             // 
             // btnCerrar_sesion
             // 
-            this.btnCerrar_sesion.Location = new System.Drawing.Point(24, 312);
+            this.btnCerrar_sesion.Location = new System.Drawing.Point(16, 312);
             this.btnCerrar_sesion.Size = new System.Drawing.Size(131, 31);
             this.btnCerrar_sesion.Visible = false;
             // 
             // btnContenedor_pri
             // 
-            this.btnContenedor_pri.Location = new System.Drawing.Point(8, 312);
+            this.btnContenedor_pri.Location = new System.Drawing.Point(16, 312);
             this.btnContenedor_pri.Size = new System.Drawing.Size(123, 31);
             this.btnContenedor_pri.Visible = false;
             // 
@@ -104,6 +107,10 @@
             this.btnAtras.UseVisualStyleBackColor = true;
             this.btnAtras.Click += new System.EventHandler(this.button5_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // Mantenimiento
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -124,6 +131,7 @@
             this.Controls.SetChildIndex(this.button3, 0);
             this.Controls.SetChildIndex(this.button4, 0);
             this.Controls.SetChildIndex(this.btnAtras, 0);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -134,6 +142,7 @@
         public System.Windows.Forms.Button button2;
         public System.Windows.Forms.Button button3;
         public System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button btnAtras;
+        public System.Windows.Forms.Button btnAtras;
+        public System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

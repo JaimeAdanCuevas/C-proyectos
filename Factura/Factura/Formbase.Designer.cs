@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Formbase));
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCerrar_sesion = new System.Windows.Forms.Button();
             this.btnContenedor_pri = new System.Windows.Forms.Button();
@@ -36,7 +37,7 @@
             // btnSalir
             // 
             this.btnSalir.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btnSalir.Location = new System.Drawing.Point(32, 216);
+            this.btnSalir.Location = new System.Drawing.Point(48, 256);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(75, 23);
             this.btnSalir.TabIndex = 0;
@@ -46,7 +47,7 @@
             // 
             // btnCerrar_sesion
             // 
-            this.btnCerrar_sesion.Location = new System.Drawing.Point(24, 216);
+            this.btnCerrar_sesion.Location = new System.Drawing.Point(24, 256);
             this.btnCerrar_sesion.Name = "btnCerrar_sesion";
             this.btnCerrar_sesion.Size = new System.Drawing.Size(83, 23);
             this.btnCerrar_sesion.TabIndex = 1;
@@ -56,7 +57,7 @@
             // 
             // btnContenedor_pri
             // 
-            this.btnContenedor_pri.Location = new System.Drawing.Point(24, 216);
+            this.btnContenedor_pri.Location = new System.Drawing.Point(32, 256);
             this.btnContenedor_pri.Name = "btnContenedor_pri";
             this.btnContenedor_pri.Size = new System.Drawing.Size(75, 23);
             this.btnContenedor_pri.TabIndex = 2;
@@ -74,8 +75,9 @@
             this.Controls.Add(this.btnContenedor_pri);
             this.Controls.Add(this.btnCerrar_sesion);
             this.Controls.Add(this.btnSalir);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Formbase";
-            this.Text = "Formbase";
+            this.Text = "La toscana";
             this.ResumeLayout(false);
 
         }
